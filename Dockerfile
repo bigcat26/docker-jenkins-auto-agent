@@ -12,7 +12,7 @@ ENV JENKINS_HOME=/var/jenkins_home \
     JENKINS_USER=${user}
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends dumb-init git libltdl7 openssh-client \
+    && apt-get install -y --no-install-recommends dumb-init git libltdl7 openssh-client docker \
     && rm -rf /var/lib/apt/lists/* \
     \
     # Install git LFS
